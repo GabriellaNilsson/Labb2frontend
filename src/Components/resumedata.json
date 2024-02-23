@@ -1,0 +1,140 @@
+
+{
+  "education": [
+    {
+      "id": 1,
+      "description": "Upper secondary school (Social Science Program)"
+    },
+    {
+      "id": 2,
+      "description": "German language course, in Stralsund, Germany"
+    },
+    {
+      "id": 3,
+      "description": "Korean language course, at Kyung Hee University in Seoul, South Korea"
+    },
+    {
+      "id": 4,
+      "description": "Korean language course, at Stockholm University"
+    },
+    {
+      "id": 5,
+      "description": "German language course, at Uppsala University"
+    },
+    {
+      "id": 6,
+      "description": "The Linguistics Program with a specialization in German, at Uppsala University (two terms)"
+    },
+    {
+      "id": 7,
+      "description": "The course 'Programming 1' at Further Education Colleges (Komvux)"
+    }
+  ],
+  "workingExperience": [
+    {
+      "id": 1,
+      "description": "Elderly care facility - summer job"
+    }
+  ],
+  "skills": [
+    {
+      "id": 100,
+      "category": "Technical",
+      "description": "C#"
+    },
+    {
+      "id": 101,
+      "category": "Technical",
+      "description": "SQL"
+    },
+    {
+      "id": 102,
+      "category": "Technical",
+      "description": "CSS"
+    },
+    {
+      "id": 103,
+      "category": "Technical",
+      "description": "HTML"
+    },
+    {
+      "id": 104,
+      "category": "Technical",
+      "description": "Visual Studios 2022"
+    },
+    {
+      "id": 105,
+      "category": "Technical",
+      "description": "Visual Studios Code"
+    },
+    {
+      "id": 106,
+      "category": "Technical",
+      "description": "Entity Framework"
+    },
+    {
+      "id": 107,
+      "category": "Technical",
+      "description": "SSMS (SQL Server Microsoft Server)"
+    },
+    {
+      "id": 108,
+      "category": "Technical",
+      "description": "ER-diagram"
+    },
+    {
+      "id": 109,
+      "category": "Technical",
+      "description": "Google drive"
+    },
+    {
+      "id": 110,
+      "category": "Technical",
+      "description": "Microsoft Word"
+    },
+    {
+      "id": 112,
+      "category": "Technical",
+      "description": "Git"
+    },
+    {
+      "id": 113,
+      "category": "Technical",
+      "description": "Github"
+    },
+    {
+      "id": 114,
+      "category": "Technical",
+      "description": "Proficiency in Googling"
+    },
+    {
+      "id": 115,
+      "category": "Language",
+      "description": "Swedish: native language"
+    },
+    {
+      "id": 116,
+      "category": "Language",
+      "description": "English: fluency level"
+    },
+    {
+      "id": 117,
+      "category": "Language",
+      "description": "German: intermediate level"
+    },
+    {
+      "id": 118,
+      "category": "Language",
+      "description": "Korean: beginner level"
+    }
+  ],
+  "misc": [
+    {
+      "id": 1000,
+      "description": "Driver's license"
+    }
+  ]
+}
+
+
+  

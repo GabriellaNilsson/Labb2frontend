@@ -1,0 +1,108 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    width: 60%;
+    max-width: 700px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    font-family: 'Arial', serif;
+    border-radius: 5%;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    width: 100%; 
+}
+
+.form-position {
+    margin: 20px;
+    width: 48%; 
+}
+
+.form-position {
+    margin: 20px 20px 20px 20px;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    padding: 10px;
+    color: rgb(150, 150, 150);
+    font-size: 16px; 
+    font-family: 'Arial', sans-serif; 
+    width: 93%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    font-size: large;
+    resize: none;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-radius: 2px;
+    border: 2px solid rgba(0, 90, 0, 0.4);
+}
+
+form button {
+    width: 45%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid rgba(17, 31, 16, 0.6);
+    background-color: rgba(93, 143, 88, 0.4);
+    color: rgb(93, 143, 88);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: rgba(93, 143, 88, 0.6);
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+       justify-content: center;
+    }
+
+    nav li {
+        margin: 3px;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+       justify-content: center;
+    }
+
+    .contact-container {
+        width: 80%; 
+    }
+
+    .form-content {
+        flex-direction: column; 
+    }
+
+    .form-position {
+        margin: 20px 0; 
+        width: 100%; 
+    }
+
+    form button {
+        width: 100%; 
+    }
+}

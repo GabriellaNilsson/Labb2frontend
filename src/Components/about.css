@@ -1,0 +1,66 @@
+.p-aboutme {
+    white-space: pre-line; 
+    font-size: x-large;
+ }
+
+ .aboutme-text-border {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.8); 
+    border-radius: 15px;
+    padding: 8px 0px 10px 0px;
+    margin: 2% 25% 0% 25%;
+    width: 70%;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+.image {
+    height: auto;
+    width: 400px;
+    margin: 2%;
+    border-radius: 1pc;
+    border: 5px solid rgb(17, 31, 16);
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+       justify-content: center;
+    }
+
+    nav li {
+        margin: 3px;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+       justify-content: center;
+    }
+
+    .aboutme-text-border {
+        margin: 2% 5% 0% 5%; 
+    }
+
+    .image {
+        width: 50%;  
+        margin-top: 15px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .aboutme-text-border {
+        width: 80%; 
+    }
+}
+
+.aboutme-text-border {
+    width: 50%; 
+    margin: 0 auto; 
+}

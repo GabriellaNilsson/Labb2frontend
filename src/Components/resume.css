@@ -1,0 +1,59 @@
+.linkedln {
+    color:rgb(93, 143, 88)
+}
+
+.resume-text-border {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.8); 
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 40%;
+    width: 30%;
+    text-align: center;
+}
+
+.resume-text {
+    font-size: x-large;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.personal-info {
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+       justify-content: center;
+    }
+
+    nav li {
+        margin: 3px;
+        font-size: 18px;
+        text-align: center;
+        width: 100%;
+       justify-content: center;
+    }
+
+    .resume-text-border {
+        max-width: 90%; 
+        width: 95%; 
+    }
+
+    .personal-info {
+        max-width: 90%; 
+        width: 95%; 
+        margin: 0 auto;
+    }
+
+    .linkedln {
+        margin: 0 auto;
+    }
+    
+}

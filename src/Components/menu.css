@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  background-image: url(https://cdn.discordapp.com/attachments/775461899444944917/1198356537614274570/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.png?ex=65be9b7e&is=65ac267e&hm=a7708acbbfbe187adde55ee647fc55e3b6fbbec3b06b7aafc5a3ad2d47303e14&);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  background-origin: content-box;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Roboto Condensed", serif;
+  color: rgb(93, 143, 88);
+}
+
+.google-font {
+  font-family: 'Roboto Condensed', serif;
+}
+
+/* Nav bar */
+.navbar {
+  background-color: rgba(17, 31, 16, 0.4);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.menu-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 10px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: larger;
+  color: rgb(93, 143, 88);
+  font-weight: bolder;
+}
+
+.navbar-links a:hover {
+  font-style: italic;
+}
+
+/* Background picture */
+.image-container img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Content on home page */
+.main-container {
+  display: flex;
+  margin-top: 10%;
+  justify-content: center;
+}
+
+.column {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 400px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.8);
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+
+  nav {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+     justify-content: center;
+  }
+
+  nav li {
+      margin: 3px;
+      font-size: 18px;
+      text-align: center;
+      width: 100%;
+     justify-content: center;
+  }
+
+  .main-container {
+      flex-direction: column; 
+  }
+
+  .column {
+      width: 50%; 
+      margin: 6% 0 2% 0;
+      margin: 0 auto;
+      margin-bottom: 50px;
+  }
+}
+  
