@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Labb2frontend/static/css/main.f3c63735.css",
+    "main.css": "/Labb2frontend/static/css/main.fd52d9cc.css",
     "main.js": "/Labb2frontend/static/js/main.e81fa47b.js",
     "static/js/592.28f84a89.chunk.js": "/Labb2frontend/static/js/592.28f84a89.chunk.js",
     "static/media/aboutme-pic.jpg": "/Labb2frontend/static/media/aboutme-pic.e0b42dbc47bec2e97cdc.jpg",
-    "static/media/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.webp": "/Labb2frontend/static/media/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.a16d234460a4c228e518.webp",
+    "static/media/jpg_44-2.jpg": "/Labb2frontend/static/media/jpg_44-2.cbcd68335bc57180703c.jpg",
     "static/media/logo.svg": "/Labb2frontend/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Labb2frontend/index.html",
-    "main.f3c63735.css.map": "/Labb2frontend/static/css/main.f3c63735.css.map",
+    "main.fd52d9cc.css.map": "/Labb2frontend/static/css/main.fd52d9cc.css.map",
     "main.e81fa47b.js.map": "/Labb2frontend/static/js/main.e81fa47b.js.map",
     "592.28f84a89.chunk.js.map": "/Labb2frontend/static/js/592.28f84a89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f3c63735.css",
+    "static/css/main.fd52d9cc.css",
     "static/js/main.e81fa47b.js"
   ]
 }
