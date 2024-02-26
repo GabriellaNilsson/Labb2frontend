@@ -1,5 +1,5 @@
 import React from "react";
-import webguidelines from "../Components/webguidelines.css";
+import webguidelines from "../css/webguidelines.css";
 
 export default function Webguidelines() {
     return (

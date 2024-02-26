@@ -1,6 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom';
-import menu from "./menu.css"
+import menu from "../css/menu.css";
+import  index from "../css/index.css";
 
 const Menu=()=>{
     return(

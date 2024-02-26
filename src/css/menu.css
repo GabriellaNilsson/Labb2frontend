@@ -1,21 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100vh;
-  font-size: 16px;
-  background-image: url(https://cdn.discordapp.com/attachments/775461899444944917/1198356537614274570/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.png?ex=65be9b7e&is=65ac267e&hm=a7708acbbfbe187adde55ee647fc55e3b6fbbec3b06b7aafc5a3ad2d47303e14&);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-clip: content-box;
-  background-origin: content-box;
-  text-align: center;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: "Roboto Condensed", serif;
-  color: rgb(93, 143, 88);
-}
+
 
 .google-font {
   font-family: 'Roboto Condensed', serif;
@@ -23,7 +6,7 @@ body {
 
 /* Nav bar */
 .navbar {
-  background-color: rgba(17, 31, 16, 0.4);
+  background-color: rgba(17, 31, 16, 0.7);
   width: 100%;
   height: auto;
   display: flex;
@@ -79,13 +62,43 @@ body {
 
 .column {
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.99);
   height: 400px;
   width: 200px;
   border-radius: 10px;
   box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.8);
   margin-left: 6%;
   margin-right: 6%;
+}
+
+.numbersInput {
+  margin-top: 20px;
+  width: 50%;
+}
+
+.change-color-btn {
+  margin-top: 10px;
+  font-size: x-small;
+  cursor: pointer;
+}
+
+.modal {
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 1);
+  height: 10px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+} 
+
+.close-btn {
+  background-color: rgb(17, 31, 16);
+  color: rgb(93, 143, 88);
+  cursor: pointer;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
@@ -117,4 +130,6 @@ body {
       margin-bottom: 50px;
   }
 }
+
+
   

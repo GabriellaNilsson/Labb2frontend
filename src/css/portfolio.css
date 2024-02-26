@@ -5,7 +5,6 @@ body.active-modal {
 .btn-modal {
     padding: 10px 20px;
     display: block;
-    /* margin: 100px auto 0; */
     font-size: 18px;
     background-color: rgb(93, 143, 88); 
     color:rgb(17, 31, 16);
@@ -14,6 +13,7 @@ body.active-modal {
     width: 10%; 
     margin: 10px;
     margin-top: 30px;
+    cursor: pointer;
 }
 
 .modal, .overlay {
@@ -32,7 +32,7 @@ body.active-modal {
     width: 100%;
     height: 100vh;
     font-size: 16px;
-    background-image: url(https://cdn.discordapp.com/attachments/775461899444944917/1198356537614274570/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.png?ex=65be9b7e&is=65ac267e&hm=a7708acbbfbe187adde55ee647fc55e3b6fbbec3b06b7aafc5a3ad2d47303e14&);
+    background-image: url(../images/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,4 +66,5 @@ body.active-modal {
     background-color: rgb(93, 143, 88);
     color:rgb(17, 31, 16);
     border-radius: 5px;
+    cursor: pointer;
 }

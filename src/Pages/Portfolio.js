@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import portfolio from "../Components/portfolio.css";
+import portfolio from "../css/portfolio.css";
 
 export default function Portfolio() {
     const [modals, setModals] = useState([]);

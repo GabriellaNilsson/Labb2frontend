@@ -1,6 +1,6 @@
 import React from "react";
 import DisplayResumeData from "../Components/DisplayResumeData";
-import resume from "../Components/resume.css";
+import resume from "../css/resume.css";
 
 function Resume() {
     return(
