@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Labb2frontend/static/css/main.c3cdf061.css",
-    "main.js": "/Labb2frontend/static/js/main.81175f94.js",
+    "main.css": "/Labb2frontend/static/css/main.8fc9073e.css",
+    "main.js": "/Labb2frontend/static/js/main.41f4d991.js",
     "static/js/592.28f84a89.chunk.js": "/Labb2frontend/static/js/592.28f84a89.chunk.js",
     "static/media/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.jpg": "/Labb2frontend/static/media/big-green-leaves-enhanced-5160x2160-v0-heiqnf0hplca1.6adca7b5ebcbd93fe24d.jpg",
     "static/media/aboutme-pic.jpg": "/Labb2frontend/static/media/aboutme-pic.e0b42dbc47bec2e97cdc.jpg",
     "static/media/logo.svg": "/Labb2frontend/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Labb2frontend/index.html",
-    "main.c3cdf061.css.map": "/Labb2frontend/static/css/main.c3cdf061.css.map",
-    "main.81175f94.js.map": "/Labb2frontend/static/js/main.81175f94.js.map",
+    "main.8fc9073e.css.map": "/Labb2frontend/static/css/main.8fc9073e.css.map",
+    "main.41f4d991.js.map": "/Labb2frontend/static/js/main.41f4d991.js.map",
     "592.28f84a89.chunk.js.map": "/Labb2frontend/static/js/592.28f84a89.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3cdf061.css",
-    "static/js/main.81175f94.js"
+    "static/css/main.8fc9073e.css",
+    "static/js/main.41f4d991.js"
   ]
 }
