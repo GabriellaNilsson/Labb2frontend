@@ -13,11 +13,11 @@ import Webguidelines from './Pages/Webguidelines';
 export default function App() {
   return(
     <Router>
-     <div classname="site-container">
-        <header classname="site-header">
+     <div className="site-container">
+        <header className="site-header">
           <Menu/>
         </header>
-        <main classname="site-content">
+        <main className="site-content">
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/resume" element={<Resume/>}/>

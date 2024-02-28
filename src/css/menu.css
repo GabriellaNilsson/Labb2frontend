@@ -71,17 +71,6 @@
   margin-right: 6%;
 }
 
-.numbersInput {
-  margin-top: 20px;
-  width: 50%;
-}
-
-.change-color-btn {
-  margin-top: 10px;
-  font-size: x-small;
-  cursor: pointer;
-}
-
 .modal {
   justify-content: center;
   background-color: rgba(0, 0, 0, 1);
@@ -99,6 +88,18 @@
   background-color: rgb(17, 31, 16);
   color: rgb(93, 143, 88);
   cursor: pointer;
+}
+
+#easterEgg {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
 }
 
 @media (min-width: 300px) and (max-width: 600px) {

@@ -4,33 +4,62 @@ export default function Home() {
   
   // Change background color easter egg 
   
-  const [color, setColor] = useState();
-  const click = color => {
-    setColor(color)
-  }
+  const [columnColor, setColumnColor] = useState();
+  const originalColor = "rgba(0, 0, 0, 0.99)";
+
+  const click = (color) => {
+    if (color === columnColor) {
+      setColumnColor(originalColor);
+    } else {
+      setColumnColor(color);
+    }
+  };
 
   useEffect(() => {
-    document.body.style.backgroundColor = color;
-  }, [color])
-    
-// Modal popup easter egg
+    document.querySelectorAll(".column").forEach((element) => {
+      element.style.backgroundColor = columnColor;
+    });
+  }, [columnColor]);
 
-const [showModal, setShowModal] = useState(false);
+  // Modal popup easter egg
 
-const handleCombinationInput = (e) => {
-  const inputValue = e.target.value;
-
-  if (inputValue === '1925') {
-    setShowModal(true);
-  } else {
-    setShowModal(false);
+  function handleCombinationInput() {
+    const numbersInput = '1925';
+    let checkInput = '';
+  
+    document.addEventListener('keydown', function (e) {
+      checkInput += e.key;
+  
+      if (checkInput.endsWith(numbersInput)) {
+        console.log('Activated');
+        document.getElementById('easterEgg').style.visibility = 'visible';
+        document.getElementById('easterEgg').style.opacity = '100%';
+        document.body.style.backgroundColor = 'black';
+  
+        const closeButton = document.getElementById('close');
+  
+        function closeModal() {
+          document.getElementById('easterEgg').style.visibility = 'hidden';
+          checkInput = '';
+        }
+  
+        closeButton.addEventListener('click', closeModal);
+      }
+    });
   }
-};
+handleCombinationInput();
+
 
 return(
   <div>
+
+<div id="easterEgg">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ppm5_AGtbTo" title="YouTube video"></iframe>
+    <button id="close">Close</button>
+  </div>
+
   <header>
-          <h1>Home page</h1>
+          <h1 className="change-color-btn" onClick={() => click("white")}>Home page</h1>
       </header>
       <main>
     <section>
@@ -69,27 +98,10 @@ return(
           </div>
         </div>
       </div>
-      <div></div>
     </section>
   </main>
-  <button className="change-color-btn" onClick={() => click("yellow")}>
-  🐰🥚
-</button>
  <form>
-  <input 
-  className = "numbersInput" 
-  type="text" 
-  placeholder="Enter number combination 1925 for a surprise"
-  onChange={handleCombinationInput}
-  />
  </form>
- {showModal && (
-            <div className="modal">
-              <p>Why did the computer go to therapy?</p>
-              <p>It had too many bytes of emotional baggage!</p>
-              <button className="close-btn" onClick={() => setShowModal(false)}>Close Modal</button>
-            </div>
-        )}
   </div>
 );
 };

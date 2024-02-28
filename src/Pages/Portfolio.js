@@ -1,73 +1,56 @@
 import React, { useState, useEffect } from "react";
 import portfolio from "../css/portfolio.css";
+// import { ClipLoader } from "react-spinners";
+import GridLoader from "react-spinners/GridLoader";
+
 
 export default function Portfolio() {
-    const [modals, setModals] = useState([]);
-
-    const toggleModal = (index) => {
-        const updatedModals = [...modals];
-        updatedModals[index] = !updatedModals[index];
-        setModals(updatedModals);
-    };
+    const url = 'https://api.github.com/users/gabriellanilsson/repos';
+    const [repos, setRepos] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        const body = document.body;
-        modals.forEach((modal, index) => {
-            if (modal) {
-                body.classList.add(`active-modal-${index}`);
-            } else {
-                body.classList.remove(`active-modal-${index}`);
-            }
-        });
+        setLoading(true)
+        setTimeout(() =>{
+            setLoading(false)
 
-        return () => {
-            modals.forEach((modal, index) => {
-                body.classList.remove(`active-modal-${index}`);
-            });
-        };
-    }, [modals]);
+        }, 1100)
+    }, [])
 
-    const popups = [
-        { title: "Popup 1", content: "Content for Popup 1" },
-        { title: "Popup 2", content: "Content for Popup 2" },
-        { title: "Popup 3", content: "Content for Popup 3" },
-    ];
-
+    useEffect(() => {
+        fetch(url)
+            .then((response) => response.json())
+            .then((data) => setRepos(data))
+            .catch((error) => console.error('Error fetching data:', error));
+    }, [url]);
+    
     return (
-        <>
-            <div>
-                <header>
-                    <h1>My Portfolio</h1>
-                </header>
-            </div>
-
-            <button onClick={() => toggleModal(0)} className="btn-modal">
-                Open Popup 1
-            </button>
-
-            <button onClick={() => toggleModal(1)} className="btn-modal">
-                Open Popup 2
-            </button>
-
-            <button onClick={() => toggleModal(2)} className="btn-modal">
-                Open Popup 3
-            </button>
-
-            {popups.map((popup, index) => (
-                modals[index] && (
-                    <div key={index} className={`modal active-modal-${index}`}>
-                        <div onClick={() => toggleModal(index)} className="overlay"></div>
-                        <div className="modal-content">
-                            <h2>{popup.title}</h2>
-                            <p>{popup.content}</p>
-                            <button
-                                className='close-modal'
-                                onClick={() => toggleModal(index)}
-                            >CLOSE</button>
+        <div>
+            <h1>My Projects</h1>
+            {
+                loading ?
+                <GridLoader 
+                color={'#FFFFFF'} loading={loading} size={30} />
+                :
+                <main className="container">
+                <section className="repoCard">
+                    {repos.map((repo) => (
+                        <div key={repo.id} className="card">
+                            <div className="classText">
+                            <p>Name of project: {repo.name}</p>
+                            <p>Language: {repo.language}</p>
+                            <p>Description: {repo.description}</p>
+                            <p>Date of creation: {repo.created_at}</p>
+                            <p style={{textAlign: "center;"}}></p>
+                            <a className="button" href={repo.html_url}>Link to repository</a>
+                            </div>
                         </div>
-                    </div>
-                )
-            ))}
-        </>
+                    ))}
+                </section>
+            </main>
+            }
+        </div>
     );
-}
+};
+   
+    
